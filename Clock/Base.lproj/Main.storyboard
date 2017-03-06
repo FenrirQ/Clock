@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="trench100free.ttf">
+            <string>Trench-Thin</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Clock" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="196649.png" translatesAutoresizingMaskIntoConstraints="NO" id="gjF-ps-6mS">
+                                <rect key="frame" x="-8" y="-97" width="391" height="861"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5a-Xu-Wff">
+                                <rect key="frame" x="15" y="20" width="345" height="144"/>
+                                <fontDescription key="fontDescription" name="Trench-Thin" family="Trench" pointSize="68"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="gjF-ps-6mS" secondAttribute="bottom" constant="-97" id="4Ue-fX-Lad"/>
+                            <constraint firstItem="y5a-Xu-Wff" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FDy-KT-W3f"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gjF-ps-6mS" secondAttribute="trailing" constant="-24" id="FV5-q8-R8K"/>
+                            <constraint firstItem="gjF-ps-6mS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-24" id="VvJ-fr-yxp"/>
+                            <constraint firstItem="gjF-ps-6mS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-97" id="aId-rG-bpg"/>
+                            <constraint firstItem="y5a-Xu-Wff" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="azz-Ce-oSS"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="gjF-ps-6mS" secondAttribute="bottom" constant="-97" id="xML-X6-oRY"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="timelbl" destination="y5a-Xu-Wff" id="UwX-HW-9Sh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="225.5" y="229.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="196649.png" width="640" height="1136"/>
+    </resources>
+</document>
